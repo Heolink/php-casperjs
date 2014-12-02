@@ -13,17 +13,17 @@ namespace Browser;
  */
 class Casper
 {
-    private $_TAG_CURRENT_URL = '[CURRENT_URL]';
-    private $_TAG_CURRENT_TITLE = '[CURRENT_TITLE]';
-    private $_TAG_CURRENT_PAGE_CONTENT ='[CURRENT_PAGE_CONTENT]';
-    private $_TAG_CURRENT_HTML ='[CURRENT_HTML]';
+    protected $_TAG_CURRENT_URL = '[CURRENT_URL]';
+    protected $_TAG_CURRENT_TITLE = '[CURRENT_TITLE]';
+    protected $_TAG_CURRENT_PAGE_CONTENT ='[CURRENT_PAGE_CONTENT]';
+    protected $_TAG_CURRENT_HTML ='[CURRENT_HTML]';
 
-    private $_debug = false;
-    private $_script = '';
-    private $_output = array();
-    private $_requestedUrls = array();
-    private $_currentUrl = '';
-    private $_userAgent = 'casper';
+    protected $_debug = false;
+    protected $_script = '';
+    protected $_output = array();
+    protected $_requestedUrls = array();
+    protected $_currentUrl = '';
+    protected $_userAgent = 'casper';
 
     /**
      * Set the UserAgent
